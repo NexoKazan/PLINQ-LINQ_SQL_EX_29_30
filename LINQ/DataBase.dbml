@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="linq" Class="DataBaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=linq;Integrated Security=True" SettingsObjectName="LINQ.Properties.Settings" SettingsPropertyName="linqConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Income" Member="Income">
+    <Type Name="Income">
+      <Column Name="code" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="point" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="inc" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Income_o" Member="Income_o">
+    <Type Name="Income_o">
+      <Column Name="point" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="inc" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Outcome" Member="Outcome">
+    <Type Name="Outcome">
+      <Column Name="code" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="point" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="out" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Outcome_o" Member="Outcome_o">
+    <Type Name="Outcome_o">
+      <Column Name="point" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="out" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
